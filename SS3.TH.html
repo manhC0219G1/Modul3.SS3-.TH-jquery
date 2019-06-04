@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var div = $("div");
+            div.animate({left: '100px'}, "slow");
+            div.animate({fontSize: '50px'}, "fast");
+        });
+    });
+</script>
+<button>Start Animation</button>
+<p> , fixed, or absolute!</p>
+<div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+</body>
+</html>
